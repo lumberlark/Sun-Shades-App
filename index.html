@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link 
+        rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    
+    <title>Sun Shades</title>
+</head>
+
+<!-- Nav bar at top - will have both top and bottom sections -->
+<body>
+   <nav id="nav">
+    <div class="navTop">
+        <div class="navItem">
+            <img src="img/sun-logo.png" alt="">
+        </div>
+
+        <div class="navItem">
+            <div class="search">
+                <input type="text" placeholder="Search" class="searchInput">
+                <img src="img/search.png" width="20" height="20" class="searchIcon">
+            </div>
+            <img src="img/heart-regular.svg" width="30" height="30" id="solidHeart" class="searchIcon2" onclick="toggleHeart()">
+                <img src="img/bag-shopping-solid.svg" width="30" height="30" class="searchIcon2">
+            <span class="limitedOffer">Limited Offer</span>
+        </div>
+    </div>
+    <div class="navMidbg">
+        <div class="navMid">
+            <div>
+                <ul class="Mid">
+                    <li>Sign up Today for Discounts!</li>
+                    <li>Use Code Shades123 for 15% off!</li>
+                    <li>Follow us on social media!</li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+
+    </div>
+    <!--Bottom of Nav that Includes links to different products -->
+    <div class="navBottom">
+        <h3 class="menuItem">Aviator</h3>
+        <h3 class="menuItem">Wayfarer</h3>
+        <h3 class="menuItem">Bill</h3>
+        <h3 class="menuItem">Caravan</h3>
+        <h3 class="menuItem">ClubMaster</h3>
+    </div>
+   </nav>
+   <!-- The products associated with menuItem link -->
+   <div class="slider">
+    <div class="sliderWrapper">
+        <div class="sliderItem">
+            <img src="img/classic.png" alt="" class="sliderImg">
+            <div class="sliderBg"></div>
+            <h1 class="sliderTitle"><span class="hero-title-size">Aviator</span><br/> <span class="under-line">New<br/> Season</span></h1>
+            <h6>Sign up today<span> 15% OFF</span></h6>
+            <h2 class="sliderPrice">$171</h2>
+            <a href="#product">
+            <button class="buyButton">Buy Now!</button>
+            </a>
+        </div>
+        <div class="sliderItem">
+            <img src="img/wayfarer.png" alt="" class="sliderImg">
+            <div class="sliderBg"></div>
+            <h1 class="sliderTitle"><span class="hero-title-size">Wayfarer</span><br/> <span class="under-line">New<br/> Season</span></h1>
+            <h6>Sign up today<span> 15% OFF</span></h6>
+            <h2 class="sliderPrice">$160</h2>
+            <a href="#product">
+            <button class="buyButton">Buy Now!</button>
+            </a>
+        </div>
+        <div class="sliderItem">
+            <img src="img/bill-white.png" alt="" class="sliderImg">
+            <div class="sliderBg"></div>
+            <h1 class="sliderTitle"><span class="hero-title-size">Bill</span><br/> <span class="under-line">New<br/> Season</span></h1>
+            <h6>Sign up today<span> 15% OFF</span></h6>
+            <h2 class="sliderPrice">$186</h2>
+            <a href="#product">
+            <button class="buyButton">Buy Now!</button>
+            </a>
+        </div>
+        <div class="sliderItem">
+            <img src="img/caravan.png" alt="" class="sliderImg">
+            <div class="sliderBg"></div>
+            <h1 class="sliderTitle"><span class="hero-title-size">Caravan</span><br/> <span class="under-line">New<br/> Season</span></h1>
+            <h6>Sign up today<span> 15% OFF</span></h6>
+            <h2 class="sliderPrice">$200</h2>
+            <a href="#product">
+            <button class="buyButton">Buy Now!</button>
+            </a>
+        </div>
+        <div class="sliderItem">
+            <img src="img/clubmaster.png" alt="" class="sliderImg">
+            <div class="sliderBg"></div>
+            <h1 class="sliderTitle"><span class="hero-title-size">Clubmaster</span><br/> <span class="under-line">New<br/> Season</span></h1>
+            <h6>Sign up today<span> 15% OFF</span></h6>
+            <h2 class="sliderPrice">$171</h2>
+            <a href="#product">
+            <button class="buyButton">Buy Now!</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- End slider for products -->
+
+<!-- Feature icons and services provided -->
+<div class="features">
+    <div class="feature">
+        <img src="img/shipping.png" alt="" class="featureIcon">
+        <span class="featureTitle">Free Shipping</span>
+        <span class="featureDesc">Free worldwide shipping on all orders.</span>
+    </div>
+    <div class="feature">
+        <img src="img/return.png" alt="" class="featureIcon">
+        <span class="featureTitle">30 Day Return</span>
+        <span class="featureDesc">Free worldwide shipping on all orders.</span>
+    </div>
+    <div class="feature">
+        <img src="img/gift.png" alt="" class="featureIcon">
+        <span class="featureTitle">Gift cards</span>
+        <span class="featureDesc">Free worldwide shipping on all orders.</span>
+    </div>
+    <div class="feature">
+        <img src="img/contact.png" alt="" class="featureIcon">
+        <span class="featureTitle">Contact us</span>
+        <span class="featureDesc">Free worldwide shipping on all orders.</span>
+    </div>
+</div>
+<!-- End Feature -->
+
+<!-- Product Information -->
+<div class="product" id="product">
+    <img src="img/classic.png" alt="img" class="productImg">
+    <div class="productDetails">
+        <h1 class="productTitle">Aviator</h1>
+        <h2 class="productPrice">$171</h2>
+        <p class="productDesc">Ransome stuff in here and thats ok cuz this is just a text haha look at what i can do.</p>
+    <div class="colors">
+        <div class="color"></div>
+        <div class="color"></div>
+    </div>
+    <button class="productButton">BUY NOW!</button>
+   <!-- Button associated with JS for Pay-form -->
+   
+
+
+   <div id="cAutoPlay" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img col-6 bd-placeholder-img-sm d-block w-200" width="600" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Location</title><rect width="0%" height="0%" fill="#666"></rect><text x="30%" y="30%" fill="#444" dy=".1em">secure checkout</text></svg>
+        
+    </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img col-6 bd-placeholder-img-sm d-block w-200" width="600" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="0%" height="0%" fill="#666"></rect><text x="30%" y="30%" fill="#444" dy=".1em">Responsible Shipping</text></svg>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img col-6 bd-placeholder-img-sm d-block w-200" width="600" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="0%" height="0%" fill="#555"></rect><text x="30%" y="30%" fill="#333" dy=".1em">ONE YEAR WARRENTY</text></svg>
+</div>
+</div>
+</div>
+
+
+</div>
+<!-- End Product Information -->
+
+<!-- Payment mod for BUY NOW button -->
+<div class="payment">
+    <h1 class="payTitle">Personal Information</h1>
+    <label>Name and Surname</label>
+    <input type="text" placeholder="John Doe" class="payInput">
+    <label>Phone Number</label>
+    <input type="text" placeholder="+1 234 5678" class="payInput">
+    <label>Address</label>
+    <input type="text" placeholder="Elton St 21 22-145" class="payInput">
+    <h1 class="payTitle">Card Information</h1>
+    <div class="cardIcons">
+        <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+        <img src="./img/master.png" alt="" width="40" class="cardIcon">
+    </div>
+    <input type="password" class="payInput" placeholder="Card Number">
+    <div class="cardInfo">
+        <input type="text" placeholder="mm" class="payInput sm">
+        <input type="text" placeholder="yyyy" class="payInput sm">
+        <input type="text" placeholder="cvv" class="payInput sm">
+    </div>
+    <button class="payButton" onclick="">Checkout!</button>
+    <span class="close">X</span>
+</div>
+</div>
+
+<!-- End Payment Mod -->
+
+<!-- Gallery Section- Also only seen on larger Devices -->
+<div class="gallery">
+    <div class="galleryItem">
+        <h1 class="galleryTitle">Be Yourself!</h1>
+        <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt="" class="galleryImg">
+    </div>
+    <div class="galleryItem">
+        <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt="" class="galleryImg">
+        <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
+    </div>
+    <div class="galleryItem">
+        <h1 class="galleryTitle">Just Do it!</h1>
+        <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt="" class="galleryImg">
+    </div>
+</div>
+<!-- End Gallery -->
+
+
+<!-- New Season Wear -->
+<div class="newSeason">
+    <div class="nsItem">
+        <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        alt="" class="nsImg">
+    </div>
+    <div class="nsItem">
+        <h3 class="nsTitleSm">Winter New Arrivals</h3>
+        <h1 class="nsTitle">New Season</h1>
+        <h1 class="nsTitle">New Collection</h1>
+        <a href="#nav">
+            <button class="nsButton">Choose your STYLE</button>
+        </a>
+    </div>
+    <div class="nsItem">
+        <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        alt="" class="nsImg">
+    </div>
+</div>
+<!-- End New Season -->
+
+<!-- Start Footer -->
+<footer>
+    <div class="footerLeft">
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">About Us</h1>
+            <ul class="fList">
+                <li class="fListItem">Company</li>
+                <li class="fListItem">Contact</li>
+                <li class="fListItem">Careers</li>
+                <li class="fListItem">Affiliates</li>
+                <li class="fListItem">Stores</li>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Useful Links</h1>
+            <!-- Add or Remove from fListItem for reusability -->
+            <ul class="fList">
+                <li class="fListItem">Support</li>
+                <li class="fListItem">Refund</li>
+                <li class="fListItem">FAQ</li>
+                <li class="fListItem">Feedback</li>
+                <li class="fListItem">Stories</li>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Products</h1>
+            <ul class="fList">
+                <li class="fListItem">Wayfarer</li>
+                <li class="fListItem">Classic</li>
+                <li class="fListItem">Bill</li>
+                <li class="fListItem">Caravan</li>
+                <li class="fListItem">Clubmaster</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerRight">
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+            <div class="fMail">
+                <input type="text" placeholder="your@email.com" class="fInput">
+                <button class="fButton">Join!</button>
+            </div>
+        </div>
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">Follow Us</h1>
+            <div class="fIcons">
+                <img src="./img/facebook.png" alt="" class="fIcon">
+                <img src="./img/twitter.png" alt="" class="fIcon">
+                <img src="./img/instagram.png" alt="" class="fIcon">
+                <img src="./img/whatsapp.png" alt="" class="fIcon">
+            </div>
+        </div>
+        <div class="footerRightMenu">
+            <span class="copyright">@Lama Dev. All rights reserved. 2022.</span>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+   <script src="app.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
