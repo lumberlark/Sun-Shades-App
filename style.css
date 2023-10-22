@@ -203,7 +203,7 @@ nav{
 }
 /* End color for price tag */
 
-
+/* Adds the underline effect to the hero section "New Season" text */
 .under-line{
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -212,9 +212,13 @@ nav{
 
 .hero-title-size{
     font-size:90px;
+    position: relative; 
+}
+
+.hero-title-size2{
+    font-size:90px;
     position: relative;
-    
-    
+    left: -11%; 
 }
 
 .sliderImg{
@@ -248,12 +252,13 @@ nav{
     z-index: 1;
 }
 
+/* Buy now button with hover effect */
 .buyButton{
     position: absolute;
     color: black;
     top: 48%;
     right: 14.5%;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
     border: transparent;
     z-index: 1;
@@ -262,6 +267,14 @@ nav{
     border: .5px solid gray;
     border-radius: 3px;   
 }
+
+.buyButton:hover{
+    top: 47.5%;
+    right: 14%;
+    font-size: 39px;
+    font-weight: 600;
+}
+/* End buy Button properties */
 
 .sliderItem .buyButton:nth-child(2){
     position: absolute;
@@ -276,13 +289,7 @@ nav{
     background-color: transparent;   
 }
 
-.buyButton:hover{
-    top: 49%;
-    font-size: 35px;
-    font-weight: 600;
-    
-}
-
+/* Sign up today with discount properties in hero section */
 h6{
    position: relative;
     color: black;
@@ -311,6 +318,10 @@ h6 span{
     font-size: 12px;
 }
 
+/* this class is only for the h6 tag nth-child #2 (Wayfarer) */
+.sign-up-special{
+    left: 15.5%;
+}
 
 
 
