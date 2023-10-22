@@ -182,11 +182,11 @@ nav{
 
 /* Color for each price tag for slider */
 .sliderItem:nth-child(1) .sliderPrice{
-    color: rgb(31, 175, 242);
+    color: rgb(10, 156, 224);
 }
 
 .sliderItem:nth-child(2) .sliderPrice{
-    color: rgb(238, 188, 8);
+    color: rgb(230, 167, 21);
 }
 
 
@@ -215,6 +215,7 @@ nav{
     position: relative; 
 }
 
+/* This class is only for the sliderTitle nth-child #5 (Clubmaster) to correct position. */
 .hero-title-size2{
     font-size:90px;
     position: relative;
@@ -255,45 +256,31 @@ nav{
 /* Buy now button with hover effect */
 .buyButton{
     position: absolute;
-    color: black;
+    color: white;
     top: 48%;
-    right: 14.5%;
+    right: 15%;
     font-size: 35px;
     font-weight: 300;
     border: transparent;
     z-index: 1;
     cursor: pointer;
-    background-color: transparent;
-    border: .5px solid gray;
+    background-color:  #e80c00;
     border-radius: 3px;   
 }
 
 .buyButton:hover{
-    top: 47.5%;
-    right: 14%;
-    font-size: 39px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 300;
+    background-color: rgba(233, 23, 23, 0.574);
 }
 /* End buy Button properties */
 
-.sliderItem .buyButton:nth-child(2){
-    position: absolute;
-    color: black;
-    top: 200%;
-    right: 10%;
-    font-size: 33px;
-    font-weight: 300;
-    border: transparent;
-    z-index: 1;
-    cursor: pointer;
-    background-color: transparent;   
-}
 
 /* Sign up today with discount properties in hero section */
 h6{
    position: relative;
     color: black;
-    top: 16%;
+    top: 13%;
     right: -270px;
     font-size: 25px;
     font-weight: 300;
@@ -357,7 +344,7 @@ text-align: center;
 }
 
 .product{
-    height: 85vh;
+    height: 90vh;
     background-color: whitesmoke;
     position: relative;
     clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 85%);
@@ -367,9 +354,9 @@ text-align: center;
     width: 500px;
     height: 600px;
     background-color: white;
-    position: absolute;
-    top: 0;
-    bottom: 0;
+    position: relative;
+    top: -475px;
+    bottom: 10%;
     left: 0;
     right: 0;
     margin: auto;
@@ -377,13 +364,16 @@ text-align: center;
     display: none;
     flex-direction: column;
     -webkit-box-shadow:0px 0px 13px 2px rgba(0,0,0,0.6);
+    z-index: 1;
 
 }
 
 
 .productImg{
+    position: relative;
     width: 50%;
-    margin-top: auto; 
+    margin-top: auto;
+    top: 15%; 
 }
 
 .payTitle{
@@ -493,32 +483,33 @@ cursor: pointer;
  .productButton{
     display: flex;
     padding: 4px 20px;
-    background-color:white;
-    color: black;
-    font-weight: 300;
+    color: #e80c00;
+    font-weight: 600;
     font-size: 30px;
     cursor: pointer;
-    border: 1px solid black;
     position: relative;
-    top: 20px;
+    top: 30px;
     z-index: 1;
-   
+    background-color:  transparent;
+    border: 1px solid gray;
  }
+
+
+.productButton:hover{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: rgba(233, 23, 23, 0.574);
+}
 
 #cAutoPlay{
     font-weight: 600;
     text-transform: uppercase;
     position: relative;
-    bottom: 35px;
+    bottom: 32px;
     right: 9px;   
 }
 
-
-
- .productButton:hover{
-    background-color: rgb(231, 225, 225);
-    color: black;
- }
  
  .gallery{
     padding: 50px;
