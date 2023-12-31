@@ -208,7 +208,7 @@ function showNextItem() {
     currentIndex = (currentIndex + 1) % listItems.length;
 }
 
-setInterval(showNextItem, 2200); // Change item every 5 seconds
+setInterval(showNextItem, 2000); // Change item every 5 seconds
 showNextItem(); // Show the first item immediately
 
 
