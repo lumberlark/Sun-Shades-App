@@ -629,9 +629,19 @@ footer {
 }
 
 /* Mobile Media  */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   nav {
     padding: 20px;
+  }
+
+  .sliderPrice {
+    display: none;
+  }
+
+  .buyButton {
+    justify-content: left;
+    align-items: left;
+    margin: 0;
   }
 
   .search {
@@ -790,6 +800,6 @@ footer {
     width: 90%;
     padding: 20px;
     position: relative;
-    top: -125%;
+    top: -120%;
   }
 }
