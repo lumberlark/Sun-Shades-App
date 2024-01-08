@@ -33,6 +33,20 @@ nav {
   transition: 0.2s ease-in-out;
 }
 
+@media (max-width: 786px) {
+  .navItem button {
+    width: 9em;
+    height: 2.5em;
+    margin-right: 15%;
+    font-size: 1.1em;
+    margin-top: 7%;
+    color: green;
+    border: 2px solid forestgreen;
+    border-radius: 7%;
+    background-color: transparent;
+  }
+}
+
 .navItem button:hover {
   width: 9.2em;
   height: 2.4em;
@@ -79,6 +93,12 @@ nav {
   cursor: pointer;
   color: black;
   margin-left: 50px;
+}
+
+@media (max-width: 786px) {
+  .limitedOffer {
+    display: none;
+  }
 }
 
 .navItem {
