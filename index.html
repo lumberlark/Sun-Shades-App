@@ -34,7 +34,7 @@
                 <img src="img/search.png" width="20" height="20" class="searchIcon">
             </div>
             <img src="img/heart-regular.svg" width="30" height="30" id="solidHeart" class="searchIcon2" onclick="toggleHeart()">
-                <img src="img/bag-shopping-solid.svg" width="30" height="30" class="searchIcon2">
+                <img src="img/bag-shopping-solid.svg" width="30" height="30" class="searchIcon2"><span id="cart-icon" onclick="showCart()"></span>
             <span class="limitedOffer">Limited Offer</span>
         </div>
     </div>
@@ -154,7 +154,10 @@
         <div class="color"></div>
         <div class="color"></div>
     </div>
-    <button class="productButton">BUY NOW!</button>
+<div class="flexBuy">
+    <button class="addToCart" onclick="addToBag()">Add to cart</button>
+    <button class="productButton">Buy Now!</button>
+</div>
    <!-- Button associated with JS for Pay-form -->
    
 
@@ -176,7 +179,7 @@
 
 
 </div>
-<!-- End Product Information -->
+<!-- End ProductProduct Information -->
 
 <!-- Payment mod for BUY NOW button -->
 <div class="payment">

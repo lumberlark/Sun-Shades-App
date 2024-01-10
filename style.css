@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,6 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 nav {
@@ -20,6 +25,10 @@ nav {
   justify-content: space-between;
 }
 
+.navItem {
+  position: relative;
+}
+
 .navItem button {
   width: 9em;
   height: 2em;
@@ -31,27 +40,6 @@ nav {
   border-radius: 7%;
   background-color: transparent;
   transition: 0.2s ease-in-out;
-}
-
-@media (max-width: 786px) {
-  .navItem button {
-    width: 9em;
-    height: 2.5em;
-    margin-right: 15%;
-    font-size: 1.1em;
-    margin-top: 7%;
-    color: green;
-    border: 2px solid forestgreen;
-    border-radius: 7%;
-    background-color: transparent;
-  }
-}
-
-.navItem button:hover {
-  width: 9.2em;
-  height: 2.4em;
-  background-color: forestgreen;
-  color: white;
 }
 
 .search {
@@ -93,12 +81,6 @@ nav {
   cursor: pointer;
   color: black;
   margin-left: 50px;
-}
-
-@media (max-width: 786px) {
-  .limitedOffer {
-    display: none;
-  }
 }
 
 .navItem {
@@ -297,6 +279,7 @@ nav {
   cursor: pointer;
   background-color: #e80c00;
   border-radius: 10px;
+  transition: 0.2s ease-in-out;
 }
 
 .buyButton:hover {
@@ -508,25 +491,52 @@ label {
   background-color: skyblue;
 }
 
-.productButton {
+.flexBuy {
+  position: relative;
   display: flex;
-  padding: 4px 20px;
+  align-items: start;
+}
+
+.productButton {
+  padding: 3px 15px;
   color: #e80c00;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   position: relative;
-  top: 30px;
+  top: 25px;
   z-index: 1;
   background-color: transparent;
-  border: 1px solid gray;
+  border: 2px solid rgb(155, 154, 154);
 }
 
 .productButton:hover {
   color: white;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   background-color: rgba(233, 23, 23, 0.574);
+  transition: 0.2s ease-in-out;
+}
+
+.addToCart {
+  padding: 3px 15px;
+  font-weight: 600;
+  font-size: 25px;
+  position: relative;
+  z-index: 1;
+  top: 25px;
+  background-color: transparent;
+  border: 2px solid rgb(155, 154, 154);
+  color: rgb(82, 82, 82);
+  cursor: pointer;
+  margin-right: 5%;
+}
+
+.addToCart:hover {
+  background-color: rgb(105, 105, 105, 0.7);
+  font-size: 26px;
+  transition: 0.2s ease-in-out;
+  color: white;
 }
 
 #cAutoPlay {
@@ -649,27 +659,33 @@ footer {
 }
 
 /* Mobile Media  */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 786px) {
   nav {
-    padding: 20px;
+    padding: 30px;
   }
 
   .sliderPrice {
     display: none;
   }
 
-  .buyButton {
-    justify-content: left;
-    align-items: left;
-    margin: 0;
-  }
-
   .search {
     display: none;
   }
 
+  .navItem button {
+    width: 10em;
+    height: 2em;
+    font-size: 0.9em;
+    margin-top: 7%;
+    color: green;
+    border: 2px solid forestgreen;
+    border-radius: 7%;
+    background-color: transparent;
+  }
+
   .navBottom {
     flex-wrap: wrap;
+    max-width: 100%;
   }
 
   .menuItem {
@@ -699,7 +715,7 @@ footer {
   }
 
   .sliderBg {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
   }
 
@@ -718,31 +734,22 @@ footer {
     top: -20px;
   }
 
+  .limitedOffer {
+    display: none;
+  }
+
   .under-line {
     position: relative;
     bottom: 20px;
   }
 
-  .sliderPrice {
-    top: unset;
-    bottom: 50px;
-    left: 15px;
-    background-color: rgb(246, 246, 246);
-  }
-
-  /* due to larger price size the sliderPice needs to be scaled accordingly */
-  .sliderItem:nth-child(4) .sliderPrice {
-    left: 3px;
-  }
-
   .buyButton {
-    margin-top: 53%;
-    right: 5%;
-  }
-
-  /* changes the buyButton(Shop Now) due to larger price size */
-  .sliderItem:nth-child(4) .buyButton {
-    right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 45%;
+    right: 29%;
   }
 
   h6 {
