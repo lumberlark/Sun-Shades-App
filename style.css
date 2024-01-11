@@ -45,7 +45,7 @@ nav {
 .search {
   display: flex;
   align-items: center;
-  background-color: gray;
+  background-color: rgb(175, 174, 174);
   padding: 10px 20px;
   border-radius: 10px;
   margin-right: 20px;
@@ -59,6 +59,15 @@ nav {
 
 .searchInput::placeholder {
   color: white;
+}
+
+.searchIcon {
+  position: relative;
+  background-color: dimgray;
+  width: 22px;
+  height: 22px;
+  left: 8px;
+  border-radius: 50%;
 }
 
 .searchIcon2 {
@@ -508,6 +517,7 @@ label {
   z-index: 1;
   background-color: transparent;
   border: 2px solid rgb(155, 154, 154);
+  left: 30px;
 }
 
 .productButton:hover {
@@ -529,7 +539,6 @@ label {
   border: 2px solid rgb(155, 154, 154);
   color: rgb(82, 82, 82);
   cursor: pointer;
-  margin-right: 5%;
 }
 
 .addToCart:hover {
@@ -537,6 +546,24 @@ label {
   font-size: 26px;
   transition: 0.2s ease-in-out;
   color: white;
+}
+#cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+#cart-badge {
+  position: relative;
+  top: -5px;
+  right: -5px;
+  background-color: rgb(175, 174, 174);
+  color: white;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 12px;
 }
 
 #cAutoPlay {
@@ -828,5 +855,9 @@ footer {
     padding: 20px;
     position: relative;
     top: -120%;
+  }
+
+  #cart-badge {
+    display: none;
   }
 }

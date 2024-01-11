@@ -1,0 +1,19 @@
+{
+  "name": "sun-shades-app",
+  "version": "1.0.0",
+  "description": "Sun Glasses E-Commerce Store",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumberlark/Sun-Shades-App.git"
+  },
+  "author": "SteveLarkinDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lumberlark/Sun-Shades-App/issues"
+  },
+  "homepage": "https://github.com/lumberlark/Sun-Shades-App#readme"
+}

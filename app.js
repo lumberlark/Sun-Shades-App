@@ -223,18 +223,21 @@ let itemCount = 0;
 
 function addToBag() {
   itemCount++;
-  updateCartItem();
+  updateCartBadge();
   confirmation();
 }
 function confirmation() {
   alert("Added to cart");
 }
 
-function updateCartItem() {
-  const cartIcon = document.getElementById("cart-icon");
-  cartIcon.textContent = `${itemCount}`;
+function updateCartBadge() {
+  const cartBadge = document.getElementById("cart-badge");
+  cartBadge.textContent = itemCount;
 }
 
 function showCart() {
   alert(`Items in the bag: ${itemCount}`);
 }
+
+// feature update to include seperate item cart page,
+// this new page will review over what was added to cart before checkout
